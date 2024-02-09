@@ -12,12 +12,13 @@ public class TaskList {
     }
 
     /**
-     * Constructs a TaskList and instantiates tasks using the provided input ArrayList.
+     * Constructs a TaskList and instantiates tasks and taskCount using the provided input ArrayList.
      *
      * @param loadedTasks an ArrayList object containing Task objects to populate the task list
      */
     public TaskList(ArrayList<Task> loadedTasks) {
         this.tasks = loadedTasks;
+        this.taskCount = loadedTasks.size();
     }
 
     /**
